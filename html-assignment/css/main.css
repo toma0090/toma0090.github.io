@@ -1,0 +1,53 @@
+/* Selectors */
+
+
+body { 
+    background-color: rgb(221, 217, 217);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+
+/* Targeting multiple elements */
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(163, 162, 162);
+}
+
+/* . Class selector */
+.site-title  {
+    color: rgb(230, 188, 230);
+    
+}
+
+/* # ID selector */
+#my-image {
+   box-shadow: 0 0 2px 1px rgb(6, 0, 0);
+}
+
+
+/* :nth-child() */
+.hobby-list {
+    list-style-type: square;
+  }
+
+
+  .hobby-list li:nth-child(1) {
+    background-color: #f6d2e9;
+  }
+
+  .hobby-list li:nth-child(2) {
+    background-color: #f4c5e0;
+  }
+
+  .hobby-list li:nth-child(3) {
+    background-color: #fab0dd;
+  }
+  
+  /* Change link styling */
+header a {
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(125, 123, 121);
+    border: 2px solid #000;
+    }
