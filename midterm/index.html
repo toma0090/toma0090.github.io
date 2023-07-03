@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm</title>
+    <title>deneme</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <div class="img-container">
+                <img src="images/TheWeekend1.jpg" alt="Header Image">
+                <h1 id="site-title">THE WEEKEND</h1>
+            </div>
+         </header>
+
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li><a href="#HOME.html" class="nav-link">HOME</a></li>
+                    <li><a href="#FACTS.html" class="nav-link">FACTS</a></li>
+                    <li><a href="#CONTACT.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h2>Life of The Weekend</h2>
+
+            <article>
+                <img src="images/TheWeekend2.jpg" alt="Article Image" width="200px">
+                <p>"The Weekend" is a Canadian singer, songwriter, and record producer named Abel Makkonen Tesfaye. He adopted the stage name "The Weeknd" to avoid copyright issues with a Canadian band named "The Weekend." The Weeknd gained significant popularity and success with his unique blend of R&amp;B, pop, and alternative music. He has released numerous hit songs and albums, including "Starboy," "Blinding Lights," "Can't Feel My Face," and "The Hills." His music often explores themes of love, relationships, partying, and personal struggles. The Weeknd's distinctive voice, introspective lyrics, and atmospheric sound have earned him critical acclaim and a dedicated fanbase.</p>
+            </article>
+
+            <h2>Facts About The Weekend:</h2>
+            <ul id="facts">
+                <li>The Weeknd gained initial recognition by anonymously uploading his music to YouTube and other online platforms in 2010.</li>
+                <li>In the early stages of his career, The Weeknd maintained a mysterious image by not revealing his face and identity, often shrouded in darkness in his music videos and promotional materials.</li>
+                <li>The Weeknd has won numerous awards throughout his career, including multiple Grammy Awards. He has been recognized for his distinctive sound and artistic contributions.</li>
+                <li>He has collaborated with various artists across different genres, including Ariana Grande, Kendrick Lamar, Daft Punk, and Drake.</li>
+            </ul>
+
+            <div>
+                <h2 id="contact">Contact to learn more</h2>
+                <section id="line">
+                    <div>
+                        <label for="fname">Your Name</label>
+                        <input id="fname" type="text" name="yourname">
+                    </div>
+
+                    <div>
+                        <label for="input-email">Your Email</label>
+                        <input id="input-email" type="text" name="email">
+                    </div>
+
+                    <div>
+                        <label for="input-message">Your Message</label>
+                        <textarea id="input-message" name="message"></textarea>
+                    </div>
+
+                    <h3>Would you like to visit him at his concert?</h3>
+
+                    <div>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="reply">
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="reply">
+                        <label for="Maybe">Maybe</label>
+                        <input type="radio" id="Maybe" name="reply">
+                    </div>
+
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </section>
+            </div>
+
+            <footer>&copy; The Weekend's Life</footer>
+        </div>
+    </div>
 </body>
+
 </html>
