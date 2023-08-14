@@ -391,7 +391,7 @@ a:-webkit-any-link {
 @media screen and (min-width: 760px) {
 
    
-    .nav-list {
+    .nav-list ul {
         flex-direction: row;
         background-color: #222;
         justify-content: space-between;
@@ -399,10 +399,6 @@ a:-webkit-any-link {
     }
 
  
-
-    .nav-list ul {
-        display: flex;
-    }
 
     .nav-list ul li {
         padding: 1rem;
