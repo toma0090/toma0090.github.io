@@ -1,0 +1,387 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: white;
+    line-height: 1.4;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .nav-list {
+    width: 100%;
+}
+
+header .nav-list ul {
+    list-style: none;
+    padding: 1rem;
+    color: #c78c06;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .nav-list ul li {
+    width: 100%;
+}
+
+header form {
+    display: flex;
+    width: 100%;
+}
+
+header form input {
+    flex-grow: 1;
+}
+
+header .nav-list ul a:link,
+header .nav-list ul a:visited {
+    color: #c78c06;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+header .nav-list ul a:hover,
+header .nav-list ul a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+#hero-container {
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-top: 10%;
+}
+
+#hero-container .content-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 30px;
+    color: white;
+    
+}
+
+#hero-container .content-wrapper button {
+    background-color: #c78c06;
+    padding: 10px 15px;
+    
+  
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+#hero-container .content-wrapper p {
+    line-height: 150%;
+}
+
+#hero-container .content-wrapper button {
+    background-color: #c78c06;
+    margin-top: 0.5rem;
+    padding: 2rem;
+    border: 0;
+    font-size: 1.2rem;
+    
+   
+    
+}
+
+#hero-container .content-wrapper .fa-play {
+    margin-left: 0.5rem;
+}
+
+#about-us {
+    background-color: moccasin;
+    margin: auto;
+}
+
+#about-us img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+#about-us p {
+    line-height: 1.5;
+}
+
+#services {
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
+}
+
+#services h3 {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+#services p {
+    padding: 0.8rem;
+    line-height: 1.5;
+}
+
+.services-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+    }
+
+ #services img {
+    width: 100%;
+    height: auto;
+    }
+
+
+.service-btn {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    border: none;
+}
+
+.service-box{
+  background-color:  moccasin;
+
+}
+
+
+
+
+#vision {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+}
+
+#vision p {
+    line-height: 1.5;
+}
+
+.vision-btn {
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+} 
+
+
+#team {
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+#team img {
+    width: 100%;
+    height: auto;
+    }
+
+
+.team-member-box{
+    background-color:  moccasin;
+  }
+
+.team-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    
+    }
+  #team h3 {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    }
+
+
+    #team p {
+    padding: 0.8rem;
+    line-height: 1.5;
+    }
+
+
+    #team hr {
+    height: 0.1rem;
+    background-color: #c78c06;
+    border: none;
+    }
+
+   
+    
+    #team h4 {
+   padding: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  
+
+
+
+#contact h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#contact-box form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-box input[type="text"],
+#contact-box textarea {
+    border: 1px solid black;
+    width: 91%;
+}
+
+#contact textarea {
+    resize: none;
+    width: 91.5%;
+    height: 250px;
+}
+
+#contact-box .contact-btn {
+    border: solid black 1px;
+    width: max-content;
+    padding: 0.5rem;
+    
+}
+
+#contact button {
+    width: 10%;
+    font-size: 1.3rem;
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+}
+
+#hours-of-operation h3 {
+    padding-bottom: 1rem;
+}
+
+
+
+table{
+    width: 100%;
+    height: auto;
+}
+table, th, td {
+    border: 0.5px solid black;
+}
+
+td, th{
+    padding: 1rem;
+}
+
+thead{
+    background-color: moccasin;
+    height: 1rem;
+}
+
+
+#hours-of-operation table th {
+    background-color:  #ffe6ac;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 1rem;
+}
+
+
+#location h3 {
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+iframe {
+    height: 450px;
+    width: 100%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer {
+    background-color: #222;
+  color: #c78c06;
+}
+
+a:-webkit-any-link {
+    
+    cursor: pointer;
+    text-decoration: underline;
+    color: #c78c06;
+}
+
+@media screen and (min-width: 1000px) {
+    
+    #contact-box {
+        margin-top: 5rem;
+    }
+}
