@@ -391,8 +391,8 @@ a:-webkit-any-link {
 @media screen and (min-width: 760px) {
 
    
-    #nav-list {
-        display: flex;
+    .nav-list {
+        flex-direction: row;
         background-color: #222;
         justify-content: space-between;
         align-items: center;
@@ -400,23 +400,23 @@ a:-webkit-any-link {
 
  
 
-    #nav-list ul {
+    .nav-list ul {
         display: flex;
     }
 
-    #nav-list ul li {
+    .nav-list ul li {
         padding: 1rem;
     }
 
    
 
-    #nav-list ul li:first-child {
+    .nav-list ul li:first-child {
         background-color: #c78c06;
     }
 
    
 
-    #nav-list form {
+    .nav-list form {
         display: flex;
         align-items: stretch;
     }
@@ -433,7 +433,7 @@ a:-webkit-any-link {
     }
 
     
-    #about-us .wrapper {
+    #about-us .content-wrapper {
         display: flex;
     }
 
@@ -441,10 +441,10 @@ a:-webkit-any-link {
     #about-us img {
         
         width: 50%;
-       
+       margin-bottom: 1rem;
     }
 
-    #about-us-text {
+    #about-text {
         padding: 1rem;
     }
 
