@@ -379,9 +379,3 @@ a:-webkit-any-link {
     color: #c78c06;
 }
 
-@media screen and (min-width: 1000px) {
-    
-    #contact-box {
-        margin-top: 5rem;
-    }
-}
