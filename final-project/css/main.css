@@ -19,10 +19,12 @@ margin: 0 auto;
 
 }
 
+
 .header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 header {
@@ -31,11 +33,12 @@ header {
     padding: 1rem 0;
 }
 
-header .nav-list {
+
+.nav-list {
     width: 100%;
 }
 
-header .nav-list ul {
+.nav-list ul {
     list-style: none;
     padding: 1rem;
     color: #c78c06;
@@ -44,17 +47,22 @@ header .nav-list ul {
     text-align: center;
 }
 
-header .nav-list ul li {
+.nav-list ul li {
     width: 100%;
 }
 
 header form {
     display: flex;
-    width: 100%;
+    width: 90%;
+    background-color: #c78c06;
 }
 
-header form input {
-    flex-grow: 1;
+
+form input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: 1px solid #c78c06;
 }
 
 header .nav-list ul a:link,
@@ -70,7 +78,9 @@ header .nav-list ul a:hover,
 header .nav-list ul a:focus {
     background-color: #c78c06;
     color: #222;
+    text-decoration: none;
 }
+
 
 
 #hero-container {
@@ -252,28 +262,33 @@ h2 {
 
 
     #team p {
-    padding: 0.8rem;
-    line-height: 1.5;
+       
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 1rem; /* Yazı boyutunu küçültmek için değeri ayarlayabilirsiniz */
+        display: flex;
+        align-items: center;
     }
-
-
+  
+    
+   
     #team hr {
     height: 0.1rem;
     background-color: #c78c06;
     border: none;
+    margin: -0.6rem auto;
+    width: 97%;
     }
 
    
     
     #team h4 {
-   padding: 0.2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
+        padding: 0.9rem;
+        font-size: 1rem;
+        margin-top: -1.5rem; 
+    }
 
   
-
-
 
 #contact h3 {
     font-size: 1.8rem;
@@ -295,7 +310,7 @@ h2 {
 
 #contact textarea {
     resize: none;
-    width: 91.5%;
+    width: 94.5%;
     height: 250px;
 }
 
@@ -305,6 +320,8 @@ h2 {
     padding: 0.5rem;
     
 }
+
+
 
 #contact button {
     width: 10%;
@@ -316,14 +333,17 @@ h2 {
 
 #hours-of-operation h3 {
     padding-bottom: 1rem;
+    margin-bottom: 0; 
+    margin-left: 0.9rem;
 }
-
 
 
 table{
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin: 0 auto;
 }
+
 table, th, td {
     border: 0.5px solid black;
 }
@@ -335,11 +355,13 @@ td, th{
 thead{
     background-color: moccasin;
     height: 1rem;
+    
 }
 
 
 #hours-of-operation table th {
     background-color:  #ffe6ac;
+    
 }
 
 
@@ -390,6 +412,14 @@ a:-webkit-any-link {
 
 @media screen and (min-width: 760px) {
 
+    .header-wrapper{
+        flex-direction: row;
+        align-items: center;
+        max-width: 1200px;
+        justify-content: space-between;
+        margin: 0 auto;
+        
+    }
    
     .nav-list ul {
         flex-direction: row;
@@ -412,9 +442,12 @@ a:-webkit-any-link {
 
    
 
-    .nav-list form {
+    .nav-list form{
         display: flex;
         align-items: stretch;
+        justify-content: space-between;
+    
+
     }
 
     
@@ -479,16 +512,26 @@ a:-webkit-any-link {
     }
 
     
-    .team-member {
+    #team .team-container {
         display: flex;
-        margin: 0;
+        flex-direction: column;
+        gap: 0;
     }
 
+    .team-container {
+        display: flex;
+        gap: 0; 
+        flex-direction: row;
+    }
+    .team-member-box {
+        display: flex;
+        margin-bottom: 0;
+    }
     
-
-    .team-member:nth-child(2) {
+    .team-member-box:nth-child(2) {
         flex-direction: row-reverse;
     }
+    
 
     
     #ending-container {
@@ -507,8 +550,6 @@ a:-webkit-any-link {
     #ending-container section:nth-child(3) {
         order: 2;
     }
-
-   
 
     #ending-container section:nth-child(2) {
         order: 3;
